@@ -1,7 +1,9 @@
 # Funko Tech Assessment
 
 ## 1. SFCC XML Parser
-I was able to complete the main objective and the bonus objective. The one lingering question and feature that I didn't add was whether a `<folder-link>` with the target `folder-id` should be delted. (i.e. `fid` is `funko-blog-fandom` the target is `funko-blog-home` should the `<folder-link folder-id=funko-blog-home>` be removed if the `folder-id` in `<classification-link>` is being renamed to `funko-blog-home`?)
+I was able to complete the main objective and the bonus objective. The one lingering question and feature that I didn't add was whether a `<folder-link>` with the target `folder-id` should be delted. 
+
+i.e. `fid` is `funko-blog-fandom` the target is `funko-blog-home` should the `<folder-link folder-id=funko-blog-home>` be removed if the `folder-id` in `<classification-link>` is being renamed to `funko-blog-home`?
 
 ## 2. Stream Products
 I was told that this was the more difficult of the two and I found this to be the opposite. I was able to get the main object and the bonus objective working. However to get the tool working I had to create the `/output` directory. 
