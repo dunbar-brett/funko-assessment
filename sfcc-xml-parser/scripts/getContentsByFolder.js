@@ -20,7 +20,7 @@ function execute(args, inputFilePath, deepLink) {
 
     // Generate the output filename/path
     let path = inputFilePath.split('/')
-    let filename = path[path.length - 1].split('.xml')[0];
+    const filename = path[path.length - 1].split('.xml')[0];
     let jsonObj;
     path = path.slice(0, -1).join('');
 
@@ -33,24 +33,24 @@ function execute(args, inputFilePath, deepLink) {
         const parser = new XMLParser(utils.parserOptions);
         jsonObj = parser.parse(data);
 
-        let mainContent = utils.getContentByFolderID(jsonObj, fid);
+        const contentByFolderId = utils.getContentByFolderID(jsonObj, fid);
 
-        console.log('mainContent', mainContent);
+        console.log('mainContent', contentByFolderId);
 
         // Initialize the results array with mainContent
-        var filteredContent = [
-            mainContent
+        const filteredContent = [
+            ...contentByFolderId
         ];
 
         // Search for all the mainContent's related classification-link elements
         if (deepLink) {
-            utils.getDeepContentLinks(mainContent, jsonObj, 5).forEach(content => {
+            utils.getDeepContentLinks(contentByFolderId, jsonObj, 5).forEach(content => {
                 utils.addContentNode(filteredContent, content);
             });
         }
 
         // Remove folders
-        delete jsonObj.library.folder;
+        delete jsonObj.library.folder; // TODO: not sure if this is needed
 
         // Overwrite content with filtered results
         jsonObj.library.content = filteredContent;

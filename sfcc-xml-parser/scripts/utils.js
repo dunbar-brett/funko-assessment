@@ -18,14 +18,16 @@ function getContentByID(jsonObj, cid) {
 }
 
 function getContentByFolderID(jsonObj, fid) {
-    let rContent;
+    let foundContents = [];
     jsonObj.library.content.forEach(content => {
         let classificationLink = content['folder-links'] ? content['folder-links']['classification-link'] : null;
+        console.log('classificationLink', classificationLink, content['@_content-id'])
         if (classificationLink && classificationLink['@_folder-id'] === fid) {
-            rContent = content;
+            console.log('found content by folder id', content['@_content-id'])
+            foundContents.push(content);
         }
     });
-    return rContent;
+    return foundContents;
 }
 
 /**
