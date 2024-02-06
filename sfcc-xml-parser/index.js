@@ -27,7 +27,6 @@ const args = process.argv.slice(2);
 const inputFilePath = utils.getProcessArg(args, 'file');
 const actionType = utils.getProcessArg(args, 'action') || utils.getProcessArg(args, 'a');
 const deepLink = utils.getProcessArg(args, 'deep') === 'true' || utils.hasProcessArgFlag(args, 'd');
-const target = utils.getProcessArg(args, 'target') === 'true';
 
 // Early returns if not enough args are provided
 if (!actionType || !actions[actionType]) {
@@ -40,4 +39,4 @@ if (!inputFilePath) {
     process.kill(process.pid);
 }
 
-actions[actionType](args, inputFilePath, deepLink, target);
+actions[actionType](args, inputFilePath, deepLink);

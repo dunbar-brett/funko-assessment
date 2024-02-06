@@ -17,6 +17,16 @@ function getContentByID(jsonObj, cid) {
     return rContent;
 }
 
+function getFolderByID(jsonObj, fid) {
+    var rFolder;
+    jsonObj.library.folder.forEach(folder => {
+        if (folder['@_folder-id'] === fid) {
+            rFolder = folder;
+        }
+    });
+    return rFolder;
+}
+
 /**
  * @function getProcessArg
  * @description checks for the existence of a process argument and

@@ -9,11 +9,12 @@ const { XMLParser, XMLBuilder } = require('fast-xml-parser');
 
 function execute(args, inputFilePath, deepLink) {
     console.log('executing action: getContentsByFolder()', inputFilePath);
-    const folderValue = utils.getProcessArg(args, 'folder');
+    const fid = utils.getProcessArg(args, 'fid');
+    const target = utils.getProcessArg(args, 'target');
 
     // Early return if not enough args are provided for this action
-    if (!folderValue || folderValue === '') {
-        console.log('invalid content folder specified. Ending process. Folder: \'' + folderValue + '\'');
+    if (!fid || fid === '') {
+        console.log('folder-id not specified. Ending process. FID: \'' + fid + '\'');
         process.kill(process.pid);
     }
 
@@ -23,32 +24,21 @@ function execute(args, inputFilePath, deepLink) {
     let jsonObj;
     path = path.slice(0, -1).join('');
 
-    const outFilePath = `./output/${filename + '_folder_' + folderValue + (deepLink ? '_deep' : '') + '.xml'}`;
-    console.log('path: ' + path, ', filename: ' + filename);
+    const outFilePath = `./output/${filename + '_folder_' + fid + (deepLink ? '_deep' : '') + '.xml'}`;
+
+    console.log('fid: ' + fid);
     console.log('outFilePath: ', outFilePath);
 
     fs.readFile(inputFilePath, function(_err, data) {
         const parser = new XMLParser(utils.parserOptions);
         jsonObj = parser.parse(data);
-        console.log('Original content count:', jsonObj.library.content.length);
-        
-        // Get all content with a specified type
 
-        let filteredContent = jsonObj.library.content.filter(
-            content => utils.matchContentByFolder(content, folderValue)
-        );
-
-        // create a duplicate to iterate to avoid double passing
-        var originalContent = filteredContent.concat();
         
-        // Search for all the content related content-link elements
+
+        // Search for all the mainContent's related classification-link elements
         if (deepLink) {
-            originalContent.forEach(content => {
-                utils.getDeepContentLinks(content, jsonObj, 10)
-                    .forEach(_content => {
-                        utils.addContentNode(filteredContent, _content);
-                    }
-                );
+            utils.getDeepContentLinks(mainContent, jsonObj, 5).forEach(content => {
+                utils.addContentNode(filteredContent, content);
             });
         }
 
@@ -58,6 +48,8 @@ function execute(args, inputFilePath, deepLink) {
         // Overwrite content with filtered results
         jsonObj.library.content = filteredContent;
 
+        console.log('filtered, ' + filteredContent.length + ' content links\n');
+        
         // Write the file to disk
         utils.writeFile(outFilePath, XMLBuilder.buildObject(jsonObj));
     });
