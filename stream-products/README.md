@@ -2,6 +2,28 @@
 
 This tool is meant to be used for processing through large amounts of XML product data. Given an input file, the script filters and transforms the XML data to an output file.
 
+## Note to reviewer
+The tool runs, however with the `test-products-big.xml` file there seems to be an issue with the File Stream library with large files. I keep getting this error below, I've verified that it occurs without my changes.
+
+```Error [ERR_STREAM_DESTROYED]: Cannot call write after a stream was destroyed
+    at node:internal/fs/streams:426:23
+    at FSReqCallback.wrapper [as oncomplete] (node:fs:829:5) {
+  code: 'ERR_STREAM_DESTROYED'
+}
+node:events:492
+      throw er; // Unhandled 'error' event
+      ^
+
+Error [ERR_STREAM_DESTROYED]: Cannot call write after a stream was destroyed
+    at node:internal/fs/streams:426:23
+    at FSReqCallback.wrapper [as oncomplete] (node:fs:829:5)
+Emitted 'error' event on WriteStream instance at:
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'ERR_STREAM_DESTROYED'
+}```
+
 ## Tasks
 Historically, the business only wanted product with all of the following properties:
 
