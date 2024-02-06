@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library xmlns="http://www.demandware.com/xml/impex/library/2006-10-31">
+  <content content-id="funko-hq-funko-shop-exclusives-during-eccc">
+    <display-name xml:lang="x-default">Funko HQ &amp; Funko Shop Exclusives During ECCC!</display-name>
+    <description xml:lang="x-default">2018/02/08</description>
+    <type>page.blogContentPage</type>
+    <visibility-mode xml:lang="x-default">visible</visibility-mode>
+    <search-words xml:lang="x-default">Funko HQ &amp; Funko Shop Exclusives During ECCC! funko-hq-funko-shop-exclusives-during-eccc ECCC Funko HQ FunkoECCC funkoecccc HQ</search-words>
+    <online-flag>true</online-flag>
+    <searchable-flag>true</searchable-flag>
+    <page-attributes>
+      <page-title xml:lang="x-default">Funko HQ &amp; Funko Shop Exclusives During ECCC!</page-title>
+    </page-attributes>
+    <folder-links>
+      <classification-link folder-id="funko-blog-home"></classification-link>
+      <folder-link folder-id="funko-storefront"></folder-link>
+    </folder-links>
+  </content>
+  <content content-id="10-crossbody-bags-new-years-2023">
+    <display-name xml:lang="x-default">10 Fun Crossbody Bags to Ring In the New Year</display-name>
+    <description xml:lang="x-default">2022/12/14 Make a statement this New Year&apos;s with these fun crossbody bags. Check out 10 of our favorite styles to add to your ensemble as you celebrate 2023.</description>
+    <type>page.blogContentPage</type>
+    <visibility-mode xml:lang="x-default">visible</visibility-mode>
+    <online-flag>true</online-flag>
+    <searchable-flag>true</searchable-flag>
+    <page-attributes>
+      <page-title xml:lang="x-default">10 Fun Crossbody Bags to Ring In the New Year</page-title>
+      <page-description xml:lang="x-default">Make a statement this New Year&apos;s with these fun crossbody bags. Check out 10 of our favorite styles to add to your ensemble as you celebrate 2023.</page-description>
+      <page-url xml:lang="x-default">10-crossbody-bags-new-years-2023</page-url>
+    </page-attributes>
+    <folder-links>
+      <classification-link folder-id="loungefly-blog-home"></classification-link>
+    </folder-links>
+    <sitemap-included-flag>false</sitemap-included-flag>
+  </content>
+</library>

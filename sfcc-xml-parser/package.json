@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "getById": "node index.js file=input/test.xml action=id cid=funko-homepage -d",
-    "getByType": "node index.js file=input/test.xml action=type type=page.blogContentPage -d"
+    "getByType": "node index.js file=input/test.xml action=type type=page.blogContentPage -d",
+    "getByFolder": "node index.js file=input/test.xml action=folder fid=Content -d"
   },
   "author": "Tyler Carruth",
   "license": "ISC",
