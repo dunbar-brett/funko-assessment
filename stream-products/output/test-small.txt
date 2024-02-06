@@ -1,0 +1,26 @@
+{
+  "product-id": "1",
+  "upc": "849803000011",
+  "b2bEvents": 0,
+  "boxNumber": 0,
+  "chanceOfChase": false,
+  "characterName": "Freddy Funko",
+  "chase": false,
+  "exclusiveRetailers": [
+    "Funko"
+  ],
+  "funkoComponent": "1a",
+  "funkoItemNumber": 1,
+  "isMobile": true,
+  "isWeb": false,
+  "license": "Freddy Funko",
+  "mobileDisplayName": "Freddy Funko Fun Klub KIT",
+  "multipack": false,
+  "productSubType": "Pop!",
+  "productType": "Pop!",
+  "purchasable": "affiliates",
+  "releaseDate": "2015-06-01T12:00:00.000+0000",
+  "series": 0,
+  "trendingValue": 18,
+  "trendingValueExternalId": 322768
+}

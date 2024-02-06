@@ -8,44 +8,48 @@ const productTransform = require('./productTransform.js');
  * @param {String} outputFilePath
  */
 const beginStream = (inputFilePath, outputFilePath) => {
-  const writeStream = createWriteStream(outputFilePath);
-  const readStream = createReadStream(inputFilePath);
-  const flowStream = XmlFlow(readStream);
-  let skippedProducts = 0;
-  let validProducts = 0;
+  return new Promise((resolve, reject) => {
+    const writeStream = createWriteStream(outputFilePath);
+    const readStream = createReadStream(inputFilePath);
+    const flowStream = XmlFlow(readStream);
+    let skippedProducts = 0;
+    let validProducts = 0;
 
-  // On end, close the streams
-  const onStreamsEnd = () => {
-    writeStream.destroy();
-    readStream.close();
-    console.log('Created output file: ', outputFilePath)
-    console.log('Skipped Products: ', skippedProducts);
-    console.log('Valid Products: ', validProducts);
-    console.log('Total Products: ', validProducts + skippedProducts);
-  };
+    // On end, close the streams
+    const onStreamsEnd = () => {
+      writeStream.destroy();
+      readStream.close();
+      console.log('Created output file: ', outputFilePath)
+      console.log('Skipped Products: ', skippedProducts);
+      console.log('Valid Products: ', validProducts);
+      console.log('Total Products: ', validProducts + skippedProducts);
+    };
 
-  flowStream.on('tag:product', product => {
-    const result = productTransform(product)
+    flowStream.on('tag:product', product => {
+      const result = productTransform(product)
 
-    if (result) {
-      console.log('Transformed Product: ', result['product-id'])
-      writeStream.write(
-        JSON.stringify(result, null, 2) + '\r\n', 
-        err => err && console.log(err)
-      )
-      validProducts++
-    } else {
-      skippedProducts++
-    }
-  });
+      if (result) {
+        console.log('Transformed Product: ', result['product-id'])
+        writeStream.write(
+          JSON.stringify(result, null, 2) + '\r\n', 
+          err => err && console.log(err)
+        )
+        validProducts++
+      } else {
+        skippedProducts++
+      }
+    });
 
-  flowStream
-    .on('end', () => {
-      onStreamsEnd()
-    })
-    .on('error', _error => {
-      onStreamsEnd()
-    })
+    flowStream
+      .on('end', () => {
+        onStreamsEnd()
+        resolve();
+      })
+      .on('error', _error => {
+        onStreamsEnd()
+        reject();
+      })
+    });
 };
 
 module.exports = beginStream;

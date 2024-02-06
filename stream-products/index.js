@@ -25,7 +25,7 @@ if (!outputFilePath) {
   process.kill(process.pid);
 }
 
-(() => {
-  beginStream(inputFilePath, outputFilePath);
+(async() => {
+  await beginStream(inputFilePath, outputFilePath);
   console.log('\r\nStream finished!\r\n');
 })();
