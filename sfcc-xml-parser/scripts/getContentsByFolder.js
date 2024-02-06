@@ -1,16 +1,19 @@
 /**
  * getContentByFolder.js
  * @description The purpose of this script is to return an array of content nodes
- *  based on the 'classification-link' property, in an XML data backup file for SFCC
+ *  based on the 'classification-link' property, in an XML data backup file for SFCC.
+ *  In Addition it renames the 'classification-link's 'folder-id' to the FUNKO_BLOG_HOME
+ *  constant if a target is not specified.
  */
 const fs = require('fs');
 const utils = require('./utils');
 const { XMLParser, XMLBuilder } = require('fast-xml-parser');
+const FUNKO_BLOG_HOME = 'funko-blog-home';
 
 function execute(args, inputFilePath, deepLink) {
     console.log('executing action: getContentsByFolder()', inputFilePath);
     const fid = utils.getProcessArg(args, 'fid');
-    const tid = utils.getProcessArg(args, 'target') || 'funko-blog-home';
+    const tid = utils.getProcessArg(args, 'target') || FUNKO_BLOG_HOME;
 
     // Early return if not enough args are provided for this action
     if (!fid || fid === '') {
