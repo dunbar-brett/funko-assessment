@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library xmlns="http://www.demandware.com/xml/impex/library/2006-10-31">
+  <content content-id="funko-homepage">
+    <display-name xml:lang="x-default">Funko - Home</display-name>
+    <type>page.storePage</type>
+    <online-flag>true</online-flag>
+    <searchable-flag>false</searchable-flag>
+    <page-attributes>
+      <page-title xml:lang="x-default">Funko Official Store, Home of Pop! Vinyl, Personalized Pops! | Funko</page-title>
+      <page-description xml:lang="x-default">Funko designs and sells unique pop culture collectibles, accessories, and toys.</page-description>
+    </page-attributes>
+  </content>
+</library>

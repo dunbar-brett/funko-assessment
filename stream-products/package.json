@@ -1,0 +1,14 @@
+{
+  "name": "stream-products",
+  "version": "1.0.0",
+  "description": "Tooling to be used to process large amounts of SFCC content XML data.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js file=input/test-small.xml output=output/test-small.txt"
+  },
+  "author": "Alvin Nguyen",
+  "license": "ISC",
+  "dependencies": {
+    "xml-flow": "^1.0.4"
+  }
+}

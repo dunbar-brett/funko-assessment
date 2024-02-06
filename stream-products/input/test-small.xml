@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog xmlns="http://www.demandware.com/xml/impex/catalog/2006-10-31" catalog-id="funko-master-catalog">
+    <header>
+        <image-settings>
+            <internal-location base-path="/images"/>
+            <view-types>
+                <view-type>hi-res</view-type>
+                <view-type>mobile-app</view-type>
+            </view-types>
+            <variation-attribute-id>color</variation-attribute-id>
+            <alt-pattern>${productname}, ${variationvalue}, ${viewtype}</alt-pattern>
+            <title-pattern>${productname}, ${variationvalue}</title-pattern>
+        </image-settings>
+    </header>
+
+   <product product-id="1">
+        <ean/>
+        <upc>849803000011</upc>
+        <unit/>
+        <min-order-quantity>1</min-order-quantity>
+        <step-quantity>1</step-quantity>
+        <display-name xml:lang="x-default">Freddy Funko Fun Klub KIT</display-name>
+        <store-force-price-flag>false</store-force-price-flag>
+        <store-non-inventory-flag>false</store-non-inventory-flag>
+        <store-non-revenue-flag>false</store-non-revenue-flag>
+        <store-non-discountable-flag>false</store-non-discountable-flag>
+        <online-flag>false</online-flag>
+        <online-flag site-id="FunkoUS">true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>true</searchable-flag>
+        <searchable-flag site-id="FunkoUS">true</searchable-flag>
+        <searchable-if-unavailable-flag>true</searchable-if-unavailable-flag>
+        <images>
+            <image-group view-type="hi-res">
+                <image path="funko/1-1.jpg"/>
+            </image-group>
+            <image-group view-type="mobile-app">
+                <image path="funko/1-1.jpg"/>
+            </image-group>
+        </images>
+        <tax-class-id>P0000000</tax-class-id>
+        <brand>Funko</brand>
+        <page-attributes/>
+        <custom-attributes>
+            <custom-attribute attribute-id="affiliateLinks">
+                <value>ebay|https://sfcc-test.funko.com/on/demandware.static/-/Sites-FunkoUS-Library/default/images/mobile-app/affiliate-link-logos/ebay-f0971aa81ab2d20f0122a6e2b5205c7a.png|https://rover.ebay.com/rover/1/711-53200-19255-0/1?mpre=https%3A%2F%2Fwww.ebay.com%2Fsch%2Fi.html%3F_from%3DR40%26_trksid%3Dp2380057.m570.l1312%26_nkw%3DFunko%2BFreddy%2BFunklub%2BPop%2B%26_sacat%3D0%26campid=5338760184%26toolid=10001%26customid=VaultedItems%26mkevt=1%26mkcid=1%26mkrid=711-53200-19255-0|null</value>
+            </custom-attribute>
+            <custom-attribute attribute-id="b2bEvents">0</custom-attribute>
+            <custom-attribute attribute-id="boxNumber">0</custom-attribute>
+            <custom-attribute attribute-id="chanceOfChase">false</custom-attribute>
+            <custom-attribute attribute-id="characterName" xml:lang="x-default">Freddy Funko</custom-attribute>
+            <custom-attribute attribute-id="chase">false</custom-attribute>
+            <custom-attribute site-id="FunkoUS" attribute-id="exclusiveRetailers">
+                <value>Funko</value>
+            </custom-attribute>
+            <custom-attribute attribute-id="fandom" xml:lang="x-default">
+                <value>Funko Toys</value>
+            </custom-attribute>
+            <custom-attribute attribute-id="funkoComponent">1a</custom-attribute>
+            <custom-attribute attribute-id="funkoItemNumber">1</custom-attribute>
+            <custom-attribute attribute-id="isMobile">true</custom-attribute>
+            <custom-attribute attribute-id="isWeb">false</custom-attribute>
+            <custom-attribute attribute-id="license" xml:lang="x-default">Freddy Funko</custom-attribute>
+            <custom-attribute attribute-id="licensors" xml:lang="x-default">
+                <value>Funko</value>
+            </custom-attribute>
+            <custom-attribute attribute-id="mobileDisplayName" xml:lang="x-default">Freddy Funko Fun Klub KIT</custom-attribute>
+            <custom-attribute attribute-id="multipack">false</custom-attribute>
+            <custom-attribute attribute-id="productSubType" xml:lang="x-default">Pop!</custom-attribute>
+            <custom-attribute attribute-id="productType" xml:lang="x-default">Pop!</custom-attribute>
+            <custom-attribute attribute-id="purchasable">affiliates</custom-attribute>
+            <custom-attribute attribute-id="releaseDate">2015-06-01T12:00:00.000+0000</custom-attribute>
+            <custom-attribute attribute-id="series">0</custom-attribute>
+            <custom-attribute attribute-id="trendingValue">18.0</custom-attribute>
+            <custom-attribute attribute-id="trendingValueExternalId">322768</custom-attribute>
+        </custom-attributes>
+        <classification-category catalog-id="funko-site-catalog">funko-funkoween</classification-category>
+        <pinterest-enabled-flag>false</pinterest-enabled-flag>
+        <facebook-enabled-flag>false</facebook-enabled-flag>
+        <store-attributes>
+            <force-price-flag>false</force-price-flag>
+            <non-inventory-flag>false</non-inventory-flag>
+            <non-revenue-flag>false</non-revenue-flag>
+            <non-discountable-flag>false</non-discountable-flag>
+        </store-attributes>
+    </product>
+
+    <product product-id="1.34631E+11">
+        <ean/>
+        <upc/>
+        <unit/>
+        <min-order-quantity>1</min-order-quantity>
+        <step-quantity>1</step-quantity>
+        <display-name xml:lang="x-default">POP Tees: Skeletor in Castle Grayskull Playset Box</display-name>
+        <long-description xml:lang="x-default">&lt;p align="center" style="margin: 0in 0in 0.0001pt; text-align: left;"&gt;&lt;span style="color: #000000;"&gt;&lt;span style="font-family: 'Trebuchet MS', sans-serif;"&gt;Masters of the Universe fans! The power of Grayskull is calling you to add this Pop! Tee to your collection! &lt;/span&gt;&lt;span style="font-family: 'Trebuchet MS', sans-serif;"&gt;Your tee will come in a box inspired by the Castle Grayskull playset packaging, and is a collectible on its own as well! &lt;/span&gt;&lt;span style="font-family: 'Trebuchet MS', sans-serif;"&gt;Available in sizes Small - 2XL. &lt;/span&gt;&lt;span style="font-family: 'Trebuchet MS', sans-serif;"&gt;The Skeletor Pop! Tee is a Funko Shop exclusive and is a limited edition of 500 pieces. 100% Cotton. Made in El Salvador. &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;</long-description>
+        <store-force-price-flag>false</store-force-price-flag>
+        <store-non-inventory-flag>false</store-non-inventory-flag>
+        <store-non-revenue-flag>false</store-non-revenue-flag>
+        <store-non-discountable-flag>false</store-non-discountable-flag>
+        <online-flag>false</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>true</searchable-flag>
+        <searchable-if-unavailable-flag>true</searchable-if-unavailable-flag>
+        <brand>Funko</brand>
+        <page-attributes/>
+        <custom-attributes>
+            <custom-attribute attribute-id="chanceOfChase">false</custom-attribute>
+            <custom-attribute attribute-id="fandom" xml:lang="x-default">
+                <value>0</value>
+            </custom-attribute>
+            <custom-attribute attribute-id="funkoComponent">1.34631E+11</custom-attribute>
+            <custom-attribute attribute-id="funkoItemNumber">1.34631E+11</custom-attribute>
+            <custom-attribute attribute-id="isWeb">true</custom-attribute>
+            <custom-attribute attribute-id="license" xml:lang="x-default">0</custom-attribute>
+            <custom-attribute attribute-id="productSubType" xml:lang="x-default">0</custom-attribute>
+            <custom-attribute attribute-id="productType" xml:lang="x-default">Apparel</custom-attribute>
+            <custom-attribute attribute-id="series">0</custom-attribute>
+            <custom-attribute attribute-id="sublicense">0</custom-attribute>
+        </custom-attributes>
+        <classification-category catalog-id="funko-site-catalog">funko-funkoween</classification-category>
+        <pinterest-enabled-flag>false</pinterest-enabled-flag>
+        <facebook-enabled-flag>false</facebook-enabled-flag>
+        <store-attributes>
+            <force-price-flag>false</force-price-flag>
+            <non-inventory-flag>false</non-inventory-flag>
+            <non-revenue-flag>false</non-revenue-flag>
+            <non-discountable-flag>false</non-discountable-flag>
+        </store-attributes>
+    </product>
+
+    <product product-id="1.35E+11">
+        <ean/>
+        <upc/>
+        <unit/>
+        <min-order-quantity>1</min-order-quantity>
+        <step-quantity>1</step-quantity>
+        <store-force-price-flag>false</store-force-price-flag>
+        <store-non-inventory-flag>false</store-non-inventory-flag>
+        <store-non-revenue-flag>false</store-non-revenue-flag>
+        <store-non-discountable-flag>false</store-non-discountable-flag>
+        <online-flag>false</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>true</searchable-flag>
+        <tax-class-id>PC040100</tax-class-id>
+        <page-attributes/>
+        <custom-attributes>
+            <custom-attribute attribute-id="productType" xml:lang="x-default">Apparel</custom-attribute>
+        </custom-attributes>
+        <classification-category catalog-id="funko-site-catalog">funko-funkoween</classification-category>
+        <pinterest-enabled-flag>false</pinterest-enabled-flag>
+        <facebook-enabled-flag>false</facebook-enabled-flag>
+        <store-attributes>
+            <force-price-flag>false</force-price-flag>
+            <non-inventory-flag>false</non-inventory-flag>
+            <non-revenue-flag>false</non-revenue-flag>
+            <non-discountable-flag>false</non-discountable-flag>
+        </store-attributes>
+    </product>
+
+    <product product-id="1.61883E+12">
+        <ean/>
+        <upc/>
+        <unit/>
+        <min-order-quantity>1</min-order-quantity>
+        <step-quantity>1</step-quantity>
+        <display-name xml:lang="x-default">POP Tees: Original Bazooka Joe</display-name>
+        <long-description xml:lang="x-default">&lt;p&gt;&lt;span style="color: #000000;"&gt;Who’s cooler than Bazooka Joe? No one, that’s who. Get an early jump on National Chewing Gum Day with the star of the Bazooka Joe comic strip, who now has his very own limited edition Funko Shop exclusive Pop! Tee. There’s no shortage of misadventures to be had while wearing this delightfully retro shirt.  Your tee will come in a box inspired by the Original Bazooka Joe Bubble Gum packaging. This is one of a kind, and is a collectible on its own as well. Available in Mens sizes XS, SM, MD, LG, XL, 2X, 3X. 90% Cotton, 10% Polyester. Made in Honduras. &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="color: #000000;"&gt;&lt;em&gt;&lt;strong&gt;**PLEASE NOTE**&lt;/strong&gt; In order to preserve the exclusivity of an item, Funko reserves the right to limit quantities of any Funko products purchased. &lt;/em&gt;&lt;/span&gt;&lt;/p&gt;</long-description>
+        <store-force-price-flag>false</store-force-price-flag>
+        <store-non-inventory-flag>false</store-non-inventory-flag>
+        <store-non-revenue-flag>false</store-non-revenue-flag>
+        <store-non-discountable-flag>false</store-non-discountable-flag>
+        <online-flag>false</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>true</searchable-flag>
+        <searchable-if-unavailable-flag>true</searchable-if-unavailable-flag>
+        <brand>Funko</brand>
+        <page-attributes/>
+        <custom-attributes>
+            <custom-attribute attribute-id="chanceOfChase">false</custom-attribute>
+            <custom-attribute attribute-id="fandom" xml:lang="x-default">
+                <value>0</value>
+            </custom-attribute>
+            <custom-attribute attribute-id="funkoComponent">1.61883E+12</custom-attribute>
+            <custom-attribute attribute-id="funkoItemNumber">1.61883E+12</custom-attribute>
+            <custom-attribute attribute-id="isWeb">true</custom-attribute>
+            <custom-attribute attribute-id="license" xml:lang="x-default">0</custom-attribute>
+            <custom-attribute attribute-id="productSubType" xml:lang="x-default">0</custom-attribute>
+            <custom-attribute attribute-id="productType" xml:lang="x-default">Apparel</custom-attribute>
+            <custom-attribute attribute-id="series">0</custom-attribute>
+            <custom-attribute attribute-id="sublicense">0</custom-attribute>
+        </custom-attributes>
+        <classification-category catalog-id="funko-site-catalog">funko-funkoween</classification-category>
+        <pinterest-enabled-flag>false</pinterest-enabled-flag>
+        <facebook-enabled-flag>false</facebook-enabled-flag>
+        <store-attributes>
+            <force-price-flag>false</force-price-flag>
+            <non-inventory-flag>false</non-inventory-flag>
+            <non-revenue-flag>false</non-revenue-flag>
+            <non-discountable-flag>false</non-discountable-flag>
+        </store-attributes>
+    </product>
+
+    <product product-id="1.62E+12">
+        <ean/>
+        <upc/>
+        <unit/>
+        <min-order-quantity>1</min-order-quantity>
+        <step-quantity>1</step-quantity>
+        <store-force-price-flag>false</store-force-price-flag>
+        <store-non-inventory-flag>false</store-non-inventory-flag>
+        <store-non-revenue-flag>false</store-non-revenue-flag>
+        <store-non-discountable-flag>false</store-non-discountable-flag>
+        <online-flag>false</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>true</searchable-flag>
+        <tax-class-id>PC040100</tax-class-id>
+        <page-attributes/>
+        <custom-attributes>
+            <custom-attribute attribute-id="productType" xml:lang="x-default">Apparel</custom-attribute>
+        </custom-attributes>
+        <classification-category catalog-id="funko-site-catalog">funko-funkoween</classification-category>
+        <pinterest-enabled-flag>false</pinterest-enabled-flag>
+        <facebook-enabled-flag>false</facebook-enabled-flag>
+        <store-attributes>
+            <force-price-flag>false</force-price-flag>
+            <non-inventory-flag>false</non-inventory-flag>
+            <non-revenue-flag>false</non-revenue-flag>
+            <non-discountable-flag>false</non-discountable-flag>
+        </store-attributes>
+    </product>
+
+    <product product-id="1.72046E+12">
+        <ean/>
+        <upc/>
+        <unit/>
+        <min-order-quantity>1</min-order-quantity>
+        <step-quantity>1</step-quantity>
+        <display-name xml:lang="x-default">POP PEZ &amp; Tee: Quisp Bundle</display-name>
+        <long-description xml:lang="x-default">&lt;p&gt;&lt;span style="color: #000000;"&gt;Is there anything cuter than a pink alien ad icon? Quisp fans can collect a Funko Shop limited edition Pop! PEZ dispenser and Pop! Tee featuring the grinning alien. This out of this world ad icon brings an undeniable interstellar charm to any collection. Your bundle will come in a box inspired by PEZ packaging. This is one of a kind, and is a collectible on its own as well. Available in Mens sizes XS, SM, MD, LG, XL, 2X. 100% Cotton. Made in Nicaragua. &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="color: #000000;"&gt;&lt;em&gt;&lt;strong&gt;**PLEASE NOTE** &lt;/strong&gt;&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span style="color: #000000;"&gt;&lt;em&gt;&lt;strong&gt;All sales are final, please review your purchase before submitting your order.&lt;/strong&gt;&lt;/em&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span style="color: #000000;"&gt;&lt;em&gt;&lt;strong&gt;In order to preserve the exclusivity of an item, Funko reserves the right to limit quantities of any Funko products purchase&lt;/strong&gt;&lt;/em&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;</long-description>
+        <store-force-price-flag>false</store-force-price-flag>
+        <store-non-inventory-flag>false</store-non-inventory-flag>
+        <store-non-revenue-flag>false</store-non-revenue-flag>
+        <store-non-discountable-flag>false</store-non-discountable-flag>
+        <online-flag>false</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>true</searchable-flag>
+        <searchable-if-unavailable-flag>true</searchable-if-unavailable-flag>
+        <brand>Funko</brand>
+        <page-attributes/>
+        <custom-attributes>
+            <custom-attribute attribute-id="chanceOfChase">false</custom-attribute>
+            <custom-attribute attribute-id="fandom" xml:lang="x-default">
+                <value>0</value>
+            </custom-attribute>
+            <custom-attribute attribute-id="funkoComponent">1.72046E+12</custom-attribute>
+            <custom-attribute attribute-id="funkoItemNumber">1.72046E+12</custom-attribute>
+            <custom-attribute attribute-id="isWeb">true</custom-attribute>
+            <custom-attribute attribute-id="license" xml:lang="x-default">0</custom-attribute>
+            <custom-attribute attribute-id="productSubType" xml:lang="x-default">0</custom-attribute>
+            <custom-attribute attribute-id="productType" xml:lang="x-default">Apparel</custom-attribute>
+            <custom-attribute attribute-id="series">0</custom-attribute>
+            <custom-attribute attribute-id="sublicense">0</custom-attribute>
+        </custom-attributes>
+        <classification-category catalog-id="funko-site-catalog">funko-funkoween</classification-category>
+        <pinterest-enabled-flag>false</pinterest-enabled-flag>
+        <facebook-enabled-flag>false</facebook-enabled-flag>
+        <store-attributes>
+            <force-price-flag>false</force-price-flag>
+            <non-inventory-flag>false</non-inventory-flag>
+            <non-revenue-flag>false</non-revenue-flag>
+            <non-discountable-flag>false</non-discountable-flag>
+        </store-attributes>
+    </product>
+
+    <product product-id="1.72047E+12">
+        <ean/>
+        <upc/>
+        <unit/>
+        <min-order-quantity>1</min-order-quantity>
+        <step-quantity>1</step-quantity>
+        <display-name xml:lang="x-default">POP PEZ &amp; Tee: Quake Bundle</display-name>
+        <long-description xml:lang="x-default">&lt;p&gt;&lt;span style="color: #000000;"&gt;There aren’t a lot of miner-themed superheroes out there but this Quake ad icon wears the dual mantles well. Representing “the power cereal from inner space” Quake fans can collect a Funko Shop limited edition Pop! PEZ dispenser and Pop! Tee featuring the grinning superhero. Your bundle will come in a box inspired by PEZ packaging. This is one of a kind, and is a collectible on its own as well. Available in Mens sizes SM, MD, LG, XL, 2X. 100% Cotton. Made in Nicaragua. &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="color: #000000;"&gt;&lt;em&gt;&lt;strong&gt;**PLEASE NOTE** &lt;/strong&gt;&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span style="color: #000000;"&gt;&lt;em&gt;&lt;strong&gt;All sales are final, please review your purchase before submitting your order.&lt;/strong&gt;&lt;/em&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span style="color: #000000;"&gt;&lt;em&gt;&lt;strong&gt;In order to preserve the exclusivity of an item, Funko reserves the right to limit quantities of any Funko products purchase&lt;/strong&gt;&lt;/em&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;</long-description>
+        <store-force-price-flag>false</store-force-price-flag>
+        <store-non-inventory-flag>false</store-non-inventory-flag>
+        <store-non-revenue-flag>false</store-non-revenue-flag>
+        <store-non-discountable-flag>false</store-non-discountable-flag>
+        <online-flag>false</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>true</searchable-flag>
+        <searchable-if-unavailable-flag>true</searchable-if-unavailable-flag>
+        <brand>Funko</brand>
+        <page-attributes/>
+        <custom-attributes>
+            <custom-attribute attribute-id="chanceOfChase">false</custom-attribute>
+            <custom-attribute attribute-id="fandom" xml:lang="x-default">
+                <value>0</value>
+            </custom-attribute>
+            <custom-attribute attribute-id="funkoComponent">1.72047E+12</custom-attribute>
+            <custom-attribute attribute-id="funkoItemNumber">1.72047E+12</custom-attribute>
+            <custom-attribute attribute-id="isWeb">true</custom-attribute>
+            <custom-attribute attribute-id="license" xml:lang="x-default">0</custom-attribute>
+            <custom-attribute attribute-id="productSubType" xml:lang="x-default">0</custom-attribute>
+            <custom-attribute attribute-id="productType" xml:lang="x-default">Apparel</custom-attribute>
+            <custom-attribute attribute-id="series">0</custom-attribute>
+            <custom-attribute attribute-id="sublicense">0</custom-attribute>
+        </custom-attributes>
+        <classification-category catalog-id="funko-site-catalog">funko-funkoween</classification-category>
+        <pinterest-enabled-flag>false</pinterest-enabled-flag>
+        <facebook-enabled-flag>false</facebook-enabled-flag>
+        <store-attributes>
+            <force-price-flag>false</force-price-flag>
+            <non-inventory-flag>false</non-inventory-flag>
+            <non-revenue-flag>false</non-revenue-flag>
+            <non-discountable-flag>false</non-discountable-flag>
+        </store-attributes>
+    </product>
+
+    <product product-id="1.72E+12">
+        <ean/>
+        <upc/>
+        <unit/>
+        <min-order-quantity>1</min-order-quantity>
+        <step-quantity>1</step-quantity>
+        <store-force-price-flag>false</store-force-price-flag>
+        <store-non-inventory-flag>false</store-non-inventory-flag>
+        <store-non-revenue-flag>false</store-non-revenue-flag>
+        <store-non-discountable-flag>false</store-non-discountable-flag>
+        <online-flag>false</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>true</searchable-flag>
+        <tax-class-id>PC040100</tax-class-id>
+        <page-attributes/>
+        <custom-attributes>
+            <custom-attribute attribute-id="productType" xml:lang="x-default">Apparel</custom-attribute>
+        </custom-attributes>
+        <classification-category catalog-id="funko-site-catalog">funko-funkoween</classification-category>
+        <pinterest-enabled-flag>false</pinterest-enabled-flag>
+        <facebook-enabled-flag>false</facebook-enabled-flag>
+        <store-attributes>
+            <force-price-flag>false</force-price-flag>
+            <non-inventory-flag>false</non-inventory-flag>
+            <non-revenue-flag>false</non-revenue-flag>
+            <non-discountable-flag>false</non-discountable-flag>
+        </store-attributes>
+    </product>
+
+    <product product-id="1.74144E+12">
+        <ean/>
+        <upc/>
+        <unit/>
+        <min-order-quantity>1</min-order-quantity>
+        <step-quantity>1</step-quantity>
+        <display-name xml:lang="x-default">POP PEZ Pals &amp; Tee: 3-Pack Bundle</display-name>
+        <long-description xml:lang="x-default">&lt;p&gt;&lt;span style="color: #000000;"&gt;If you’re looking to add some pals to your collection, this Funko Shop limited edition Pop! PEZ Pals &amp;amp; Tee Bundle is an excellent place to start. Snack on a Pop! PEZ Boy with Cap, Firefighter and Policeman while wearing a shirt with each of these characters. Your bundle will come in a box inspired by PEZ packaging. This is one of a kind, and is a collectible on its own as well. Available in Mens sizes XS, SM, MD, LG, XL, 2X. 35% Cotton, 65% Polyester. Made in Nicaragua. &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="color: #000000;"&gt;&lt;em&gt;&lt;strong&gt;**PLEASE NOTE** &lt;/strong&gt;&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span style="color: #000000;"&gt;&lt;em&gt;&lt;strong&gt;All sales are final, please review your purchase before submitting your order.&lt;/strong&gt;&lt;/em&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span style="color: #000000;"&gt;&lt;em&gt;&lt;strong&gt;In order to preserve the exclusivity of an item, Funko reserves the right to limit quantities of any Funko products purchased. &lt;/strong&gt;&lt;/em&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span style="text-decoration: underline; color: #000000;"&gt;&lt;em&gt;&lt;strong&gt;This Pop Up Shop exclusive is not eligible for any promotional discounts at time of launch.&lt;/strong&gt;&lt;/em&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;</long-description>
+        <store-force-price-flag>false</store-force-price-flag>
+        <store-non-inventory-flag>false</store-non-inventory-flag>
+        <store-non-revenue-flag>false</store-non-revenue-flag>
+        <store-non-discountable-flag>false</store-non-discountable-flag>
+        <online-flag>false</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>true</searchable-flag>
+        <searchable-if-unavailable-flag>true</searchable-if-unavailable-flag>
+        <brand>Funko</brand>
+        <page-attributes/>
+        <custom-attributes>
+            <custom-attribute attribute-id="chanceOfChase">false</custom-attribute>
+            <custom-attribute attribute-id="fandom" xml:lang="x-default">
+                <value>0</value>
+            </custom-attribute>
+            <custom-attribute attribute-id="funkoComponent">1.74144E+12</custom-attribute>
+            <custom-attribute attribute-id="funkoItemNumber">1.74144E+12</custom-attribute>
+            <custom-attribute attribute-id="isWeb">true</custom-attribute>
+            <custom-attribute attribute-id="license" xml:lang="x-default">0</custom-attribute>
+            <custom-attribute attribute-id="productSubType" xml:lang="x-default">0</custom-attribute>
+            <custom-attribute attribute-id="productType" xml:lang="x-default">Apparel</custom-attribute>
+            <custom-attribute attribute-id="series">0</custom-attribute>
+            <custom-attribute attribute-id="sublicense">0</custom-attribute>
+        </custom-attributes>
+        <classification-category catalog-id="funko-site-catalog">funko-funkoween</classification-category>
+        <pinterest-enabled-flag>false</pinterest-enabled-flag>
+        <facebook-enabled-flag>false</facebook-enabled-flag>
+        <store-attributes>
+            <force-price-flag>false</force-price-flag>
+            <non-inventory-flag>false</non-inventory-flag>
+            <non-revenue-flag>false</non-revenue-flag>
+            <non-discountable-flag>false</non-discountable-flag>
+        </store-attributes>
+    </product>
+
+    <product product-id="1.74E+12">
+        <ean/>
+        <upc/>
+        <unit/>
+        <min-order-quantity>1</min-order-quantity>
+        <step-quantity>1</step-quantity>
+        <store-force-price-flag>false</store-force-price-flag>
+        <store-non-inventory-flag>false</store-non-inventory-flag>
+        <store-non-revenue-flag>false</store-non-revenue-flag>
+        <store-non-discountable-flag>false</store-non-discountable-flag>
+        <online-flag>false</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>true</searchable-flag>
+        <tax-class-id>PC040100</tax-class-id>
+        <page-attributes/>
+        <custom-attributes>
+            <custom-attribute attribute-id="productType" xml:lang="x-default">Apparel</custom-attribute>
+        </custom-attributes>
+        <classification-category catalog-id="funko-site-catalog">funko-funkoween</classification-category>
+        <pinterest-enabled-flag>false</pinterest-enabled-flag>
+        <facebook-enabled-flag>false</facebook-enabled-flag>
+        <store-attributes>
+            <force-price-flag>false</force-price-flag>
+            <non-inventory-flag>false</non-inventory-flag>
+            <non-revenue-flag>false</non-revenue-flag>
+            <non-discountable-flag>false</non-discountable-flag>
+        </store-attributes>
+    </product>
+</catalog>
