@@ -10,7 +10,7 @@ const { XMLParser, XMLBuilder } = require('fast-xml-parser');
 function execute(args, inputFilePath, deepLink) {
     console.log('executing action: getContentsByFolder()', inputFilePath);
     const fid = utils.getProcessArg(args, 'fid');
-    const target = utils.getProcessArg(args, 'target');
+    const tid = utils.getProcessArg(args, 'target') || 'funko-blog-home';
 
     // Early return if not enough args are provided for this action
     if (!fid || fid === '') {
@@ -33,7 +33,7 @@ function execute(args, inputFilePath, deepLink) {
         const parser = new XMLParser(utils.parserOptions);
         jsonObj = parser.parse(data);
 
-        const contentByFolderId = utils.getContentByFolderID(jsonObj, fid);
+        const contentByFolderId = utils.getContentByFolderID(jsonObj, fid, tid);
 
         console.log('mainContent', contentByFolderId);
 

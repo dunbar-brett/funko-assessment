@@ -17,14 +17,18 @@ function getContentByID(jsonObj, cid) {
     return rContent;
 }
 
-function getContentByFolderID(jsonObj, fid) {
+function getContentByFolderID(jsonObj, fid, tid) {
     let foundContents = [];
     jsonObj.library.content.forEach(content => {
-        let classificationLink = content['folder-links'] ? content['folder-links']['classification-link'] : null;
-        console.log('classificationLink', classificationLink, content['@_content-id'])
+        let folderLinks = content['folder-links'];
+        let classificationLink = folderLinks ? folderLinks['classification-link'] : null;
         if (classificationLink && classificationLink['@_folder-id'] === fid) {
-            console.log('found content by folder id', content['@_content-id'])
             foundContents.push(content);
+
+            // rename classification-link to target
+            classificationLink['@_folder-id'] = tid;
+
+            // Should this also remove the folder-link if it has the same name as the target?
         }
     });
     return foundContents;
