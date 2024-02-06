@@ -33,7 +33,14 @@ function execute(args, inputFilePath, deepLink) {
         const parser = new XMLParser(utils.parserOptions);
         jsonObj = parser.parse(data);
 
-        
+        let mainContent = utils.getContentByFolderID(jsonObj, fid);
+
+        console.log('mainContent', mainContent);
+
+        // Initialize the results array with mainContent
+        var filteredContent = [
+            mainContent
+        ];
 
         // Search for all the mainContent's related classification-link elements
         if (deepLink) {

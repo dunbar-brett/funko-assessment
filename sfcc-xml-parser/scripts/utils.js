@@ -17,14 +17,15 @@ function getContentByID(jsonObj, cid) {
     return rContent;
 }
 
-function getFolderByID(jsonObj, fid) {
-    var rFolder;
-    jsonObj.library.folder.forEach(folder => {
-        if (folder['@_folder-id'] === fid) {
-            rFolder = folder;
+function getContentByFolderID(jsonObj, fid) {
+    let rContent;
+    jsonObj.library.content.forEach(content => {
+        let classificationLink = content['folder-links'] ? content['folder-links']['classification-link'] : null;
+        if (classificationLink && classificationLink['@_folder-id'] === fid) {
+            rContent = content;
         }
     });
-    return rFolder;
+    return rContent;
 }
 
 /**
@@ -218,6 +219,7 @@ module.exports = {
     },
     addContentNode,
     getContentByID,
+    getContentByFolderID,
     getContentLinks,
     getDeepContentLinks,
     getProcessArg,
