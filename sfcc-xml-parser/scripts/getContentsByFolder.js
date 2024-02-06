@@ -55,10 +55,11 @@ function execute(args, inputFilePath, deepLink) {
         // Overwrite content with filtered results
         jsonObj.library.content = filteredContent;
 
-        console.log('filtered, ' + filteredContent.length + ' content links\n');
+        console.log('filtered, ' + filteredContent.length + ' content link(s)\n');
         
         // Write the file to disk
-        utils.writeFile(outFilePath, XMLBuilder.buildObject(jsonObj));
+        const builder = new XMLBuilder(utils.builderOptions);
+        utils.writeFile(outFilePath, utils.formatXMLString(builder.build(jsonObj)));
     });
 
 }
