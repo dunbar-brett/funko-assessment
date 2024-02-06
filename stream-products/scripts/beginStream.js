@@ -32,13 +32,6 @@ const beginStream = (inputFilePath, outputFilePath) => {
       console.log('Skipped Products: ', skippedProducts);
       console.log('Valid Products: ', validProducts);
       console.log('Total Products: ', validProducts + skippedProducts);
-      
-      if (errorMessage) {
-        console.error(errorMessage);
-        reject(errorMessage);
-      }
-
-      resolve();
     };
 
     flowStream.on('tag:product', product => {
@@ -60,10 +53,12 @@ const beginStream = (inputFilePath, outputFilePath) => {
     flowStream
       .on('end', () => {
         onStreamsEnd()
+        resolve();
       })
       .on('error', _error => {
         errorMessage = _error;
         onStreamsEnd()
+        reject(errorMessage);
       })
     });
 };
