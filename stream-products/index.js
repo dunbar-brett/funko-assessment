@@ -13,6 +13,7 @@ const utils = require('./scripts/utils');
 const args = process.argv.slice(2);
 const inputFilePath = utils.getProcessArg(args, 'file');
 const outputFilePath = utils.getProcessArg(args, 'output');
+const requiredFields = utils.getRequiredFields();
 
 // Early returns if not enough args are provided
 if (!inputFilePath) {
@@ -25,7 +26,12 @@ if (!outputFilePath) {
   process.kill(process.pid);
 }
 
+if (!requiredFields.length) {
+  console.error('No required fields found in constants/utils.txt');
+  process.kill(process.pid);
+}
+
 (async() => {
-  await beginStream(inputFilePath, outputFilePath);
+  await beginStream(inputFilePath, outputFilePath, requiredFields);
   console.log('\r\nStream finished!\r\n');
 })();

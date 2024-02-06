@@ -1,3 +1,5 @@
+const fs = require('fs');
+
 /**
  * @function getProcessArg
  * @description checks for the existence of a process argument and
@@ -32,7 +34,19 @@ function safeParse(value) {
     }
 }
 
+function getRequiredFields() {
+    // return a list of strings from ../constants/utils.txt
+    try {
+        const data = fs.readFileSync('constants/utils.txt', 'utf8');
+        return data.split('\n');
+    } catch(err) {
+        console.error(err);
+        return [];
+    }
+}
+
 module.exports = {
     getProcessArg,
+    getRequiredFields,
     safeParse
 };

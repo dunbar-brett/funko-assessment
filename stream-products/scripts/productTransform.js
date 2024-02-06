@@ -7,7 +7,9 @@ const utils = require('./utils');
  */
 const productTransform = product => {
   let record = null
-  
+
+  const requiredFields = utils.getRequiredFields();
+
   // Attempt to create a new product record
   if (product && product['$attrs'] && product['$attrs']['product-id']) {
     let searchable = product['searchable-flag']
@@ -54,7 +56,12 @@ const productTransform = product => {
         }
       }
 
-      if (!record['product-id'] || !record['upc'] || !record['funkoItemNumber'] || !record['funkoComponent'] || !record['purchasable']) { // Business Logic
+      const productIsValid = (product) => {
+        return requiredFields.every(field => Boolean(product[field]));
+      };
+      
+
+      if (!productIsValid(record)) {
         record = null
       }
     }
